@@ -7,7 +7,7 @@
 	</appender>
 
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<file>logs/application.log</file>
+		<file>logs/helloRest.log</file>
 
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
@@ -19,8 +19,7 @@
 	<logger name="org.mortbay.log" level="WARN" />
 	<logger name="org.springframework" level="INFO" />
 	<logger name="org.springframework.beans" level="WARN" />
-	<logger name="org.ibatis" level="INFO" />
-    <logger name="github.priyatam.springrest" level="DEBUG" />
+    <logger name="com.vineetb.rest.helloRest" level="DEBUG" />
     
 	<root level="INFO">
 		<appender-ref ref="STDOUT" />

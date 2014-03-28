@@ -57,4 +57,13 @@ public class FooService implements IFooService {
 		return false;
 	}
 
+	@Override
+	public Foo update(Foo inFoo) {
+		Foo ufoo = getById(inFoo.getId());
+		if (ufoo != null) {
+			ufoo.setBar(inFoo.getBar());
+		}
+		return ufoo;
+	}
+
 }

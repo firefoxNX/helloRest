@@ -11,5 +11,7 @@ public interface IFooService {
 	public Foo getById(Long id);
 
 	public boolean deleteById(Long id);
+	
+	public Foo update(Foo infoo);
 
 }

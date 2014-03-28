@@ -1,7 +1,5 @@
 package com.vineetb.rest;
 
-import static org.junit.Assert.fail;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,17 +28,21 @@ public class FooServiceTest {
 
 	@Test
 	public void testCreate() {
-		fail("Not yet implemented");
+		Foo foo = new Foo();
+		foo.setId(200L);
+		foo.setBar("2000");
+		fooService.create(foo);
 	}
 
 	@Test
 	public void testGetById() {
-		fail("Not yet implemented");
+		Foo foo = fooService.getById(100L);
+		System.out.println(foo);
 	}
 
 	@Test
 	public void testDeleteById() {
-		fail("Not yet implemented");
+		assert(fooService.deleteById(100L));
 	}
 
 }
